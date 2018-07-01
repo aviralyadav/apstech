@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-sm-1"></div>
+    <div class="col-xs-12 col-sm-10 col-md-8">
+      <div class="signup-box">
+        <h2>Registration</h2>
+        <form [formGroup]="signupForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" formControlName="name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="name">Mobile</label>
+            <input type="number" name="mobile" formControlName="mobile" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="name">Email</label>
+            <input type="email" name="email" formControlName="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="name">Username</label>
+            <input type="text" name="username" formControlName="username" [minlength]="6" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="name">Password</label>
+            <input type="password" name="password" formControlName="password" [minlength]="6" class="form-control">
+          </div>
+          <button [disabled]="!signupForm.valid" type="submit" class="btn btn-primary">Submit</button>
+          <button (click)="onReset()" class="btn btn-primary">Cancel</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-1"></div>
+  </div>
+</div>

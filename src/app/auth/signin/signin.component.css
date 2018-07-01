@@ -1,0 +1,18 @@
+.signin-box {
+    padding: 2%;
+    box-sizing: border-box;
+    box-shadow: 2px 0px 10px 5px #ccc;
+    margin: 2%;
+    border-radius: 7px;
+}
+.sign-min-height {
+    min-height: 557px;
+}
+.logged-out {
+  color: indianred;
+  padding-top: 20px;
+}
+.logged-in {
+  color: forestgreen;
+  padding-top: 20px;
+}
